@@ -1,0 +1,116 @@
+.virtual__keyboard {
+	background-color: rgb(254, 247, 228);
+}
+
+.wrapper {
+	height: 100vh;
+	width: 754px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+textarea {
+	resize: none;
+	width: 400px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.keyboard {
+	border-radius: 8px;
+	padding: 20px;
+	width: 100%;
+	height: max-content;
+	background-color: #cfcfcf;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+}
+
+.key {
+	width: 45px;
+	height: 45px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px #302c2b, 0 1px 2px rgb(122, 135, 255);
+	background-color: rgb(188, 240, 210, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #525b67;
+}
+
+.backspace {
+	width: 90px;
+}
+
+.tab,
+.backslash {
+	width: 67.5px;
+}
+
+.caps-lock,
+.shift-right {
+	width: calc(78.75px + 1.5px);
+}
+
+.enter,
+.shift-left {
+	width: calc(101.25px + 1.5px);
+}
+
+.space {
+	width: 267px;
+}
+
+.ctrl-left {
+	width: 59px;
+}
+
+.enter,
+.space {
+	background-color: rgb(255, 160, 122, 1);
+}
+
+
+.delete,
+.backspace,
+.tab,
+.caps-lock,
+.shift-left,
+.shift-right,
+.ctrl-left,
+.alt-left,
+.super,
+.alt-right {
+	background-color: rgb(188, 240, 210, 1);
+}
+
+.lang,
+.esc,
+.up,
+.left,
+.down,
+.right {
+	background-color: #977cfc;
+}
+
+span::before {
+	content: attr(data-content);
+}
+
+.active {
+	background-color: rgb(153, 125, 252);
+	opacity: 0.3;
+}
+
+.caps-lock__active {
+	background-color: rgb(153, 125, 252);
+	opacity: 0.3;
+}
