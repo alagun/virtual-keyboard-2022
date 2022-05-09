@@ -8,8 +8,6 @@ import mouseClickKey from './assets/mouseClickKey.js'
 import handClickDown from './assets/handClickDown.js'
 
 async function runApp() {
-  //localStorage.setItem('lang','en');
-  
   localStorage.setItem('lang', localStorage.getItem('lang') || 'en');
   let layout = localStorage.getItem('lang') === 'en' ? en : ru;
 
@@ -25,11 +23,6 @@ async function runApp() {
   keyboard.addEventListener('click', mouseClickKey);
 
   document.addEventListener('keydown', handClickDown);
-  //const { default: handleKeyDown } = await import('./helpers/handleKeyDown.js')
-  // const { default: handleKeyUp } = await import('./helpers/handleKeyUp.js')
-  // const { default: locale } = await import('./helpers/locale.js')
-
-  //document.addEventListener('keydown', handleKeyDown.bind(this, row))
 
   changeKeyboard(mode, layout, row);
   const textarea = document.querySelector('textarea');
