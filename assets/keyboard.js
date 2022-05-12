@@ -3,6 +3,7 @@ export default `
 <div class="wrapper">
 <label for="v__keyboard">VIRTUAL KEYBOARD:</label>
 <textarea id="v__keyboard" name="v__keyboard"></textarea>
+<div class="rev"><span>Change language LeftShift + LeftAlt</span></div>
 <div class="keyboard">
 <div class="row">
    <div class="key esc" data-code="Escape"><span></span></div>

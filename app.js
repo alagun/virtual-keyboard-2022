@@ -6,6 +6,7 @@ import mouseClickDown from './assets/mouseClickDown.js'
 import mouseClickUp from './assets/mouseClickUp.js'
 import mouseClickKey from './assets/mouseClickKey.js'
 import handClickDown from './assets/handClickDown.js'
+import handClickUp from './assets/handClickUp.js'
 
 async function runApp() {
   localStorage.setItem('lang', localStorage.getItem('lang') || 'en');
@@ -23,6 +24,7 @@ async function runApp() {
   keyboard.addEventListener('click', mouseClickKey);
 
   document.addEventListener('keydown', handClickDown);
+  document.addEventListener('keyup', handClickUp);
 
   changeKeyboard(mode, layout, row);
   const textarea = document.querySelector('textarea');
@@ -30,4 +32,4 @@ async function runApp() {
 }
 
 runApp()
-alert('Добрый день, в связи с болезнью не успел полностью реализовать требования к таску. не делал Eslint, проблемы с логикой ввода с клавиатуры, функции списывать не собираюсь .буду признателен за возможность допроверки. Спасибо за понимание, с уважением Алексей.\nЗа обратную связь буду признателен\nPS контакты для связи на гитхабе')
+//alert('Добрый день, в связи с болезнью не успел полностью реализовать требования к таску. не делал Eslint, проблемы с логикой ввода с клавиатуры, функции списывать не собираюсь .буду признателен за возможность допроверки. Спасибо за понимание, с уважением Алексей.\nЗа обратную связь буду признателен\nPS контакты для связи на гитхабе')
