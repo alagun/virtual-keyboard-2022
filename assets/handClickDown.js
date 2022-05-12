@@ -1,8 +1,9 @@
-import en from './en';
-import ru from './ru';
-import changeKeyboard from './changeKeyboard';
-import modeSetGet from './mode';
-import point from './point';
+/* eslint-disable import/extensions */
+import en from './en.js';
+import ru from './ru.js';
+import changeKeyboard from './changeKeyboard.js';
+import modeSetGet from './mode.js';
+import point from './point.js';
 
 let mode = 'normal';
 const setMode = true;

@@ -59,8 +59,8 @@ export default `
    <div class="key" data-code="Period"><span></span></div>
    <div class="key" data-code="Slash"><span></span></div>
    <div class="key up" data-code="ArrowUp"><span></span> </div>
-	<div class="key shift-right" data-code="ShiftRight"><span></span></div>
-	<div class="key ctrl-left" data-code="ControlLeft"><span></span></div>
+   <div class="key shift-right" data-code="ShiftRight"><span></span></div>
+   <div class="key ctrl-left" data-code="ControlLeft"><span></span></div>
    <div class="key alt-left" data-code="AltLeft"><span></span></div>
    <div class="key backquote" data-code="Backquote"><span></span></div>
    <div class="key space" data-code="Space"><span></span></div>
@@ -69,8 +69,7 @@ export default `
    <div class="key left" data-code="ArrowLeft"><span></span></div>
    <div class="key down" data-code="ArrowDown"><span></span></div>
    <div class="key right" data-code="ArrowRight"><span></span></div>
-	<div class="key delete" data-code="Delete"><span></span></div>
+   <div class="key delete" data-code="Delete"><span></span></div>
 </div>
 </div>
-</div>
-`
+</div>`;

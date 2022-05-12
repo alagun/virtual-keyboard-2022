@@ -1,14 +1,15 @@
+/* eslint-disable import/extensions */
 import en from './en.js';
 import ru from './ru.js';
 import changeKeyboard from './changeKeyboard.js';
-import modeSet from './mode.js';
+import modeSetGet from './mode.js';
 import point from './point.js';
 
 let mode = 'normal';
 // console.log(mode)
 
 export default function handClickUp(event) {
-  mode = modeSet(mode);
+  mode = modeSetGet(mode);
   // console.log('MODE в части поднятия: ' + mode)
   // console.log(event)
   const row = document.querySelector('.row');
@@ -20,7 +21,7 @@ export default function handClickUp(event) {
 
   if (mode === 'shift') {
     point('clearShift');
-    const tey = modeSet(mode);
+    const tey = modeSetGet(mode);
     changeKeyboard(tey, layout, row);
   }
   if (mode === 'capsOnShift' && event.code === 'ShiftLeft') {
